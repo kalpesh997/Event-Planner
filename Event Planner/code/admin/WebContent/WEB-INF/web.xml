@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>admin</display-name>
+  <welcome-file-list>
+    <welcome-file>Sign-in.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>hello</servlet-name>
+    <servlet-class>signin</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>hello</servlet-name>
+    <url-pattern>/hello</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <display-name>UserController</display-name>
+    <servlet-name>UserController</servlet-name>
+    <servlet-class>com.db.controller.UserController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UserController</servlet-name>
+    <url-pattern>/UserController</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>change</servlet-name>
+    <servlet-class>ChangePassDemo</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>change</servlet-name>
+    <url-pattern>/change</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>edit</servlet-name>
+    <servlet-class>com.db.controller.EventController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>edit</servlet-name>
+    <url-pattern>/EventController</url-pattern>
+  </servlet-mapping>
+</web-app>
